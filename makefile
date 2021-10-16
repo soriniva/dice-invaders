@@ -1,4 +1,4 @@
-FILES          = SpaceInvaders.cpp Engine.cpp Player.cpp Weapon.cpp Utils.cpp Alien.cpp AlienPack.cpp
+FILES          = src/SpaceInvaders.cpp src/Engine.cpp src/Player.cpp src/Weapon.cpp src/Utils.cpp src/Alien.cpp src/AlienPack.cpp
 EXECUTABLE     = SpaceInvaders.exe
 CFLAGS         = /nologo /Z7 /W4 /WX /Fe$(EXECUTABLE) /D_HAS_EXCEPTIONS=0
 CFLAGS_RELEASE = $(CFLAGS) /Ox /MT /DNDEBUG

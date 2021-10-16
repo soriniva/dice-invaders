@@ -62,7 +62,7 @@ kills all aliens, a new alien army should be created at the top of the screen.
 - CD into the "sdl" directory
 - Make sure you have SDL2 installed
   - Linux: `sudo apt-get install libsdl2-dev` (depending on distro)
-  - macOS: Install the development libraries from [libsdl.org](https://www.libsdl.org/download-2.0.php) into `/Library/Frameworks`, or with Brew: `brew install sdl2`
+  - macOS: Install the development with Brew: `brew install sdl2`
 - Run `make -f makefile.sdl` to build the code
 - Run `./SpaceInvaders`
 

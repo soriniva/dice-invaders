@@ -1,13 +1,7 @@
-OperatingSystem := $(shell uname)
-ifeq ($(OperatingSystem), Darwin)
-	LibSDL := -L/usr/local/Cellar/sdl2/2.0.16/lib -lSDL2
-else
-	LibSDL := -lSDL2
-endif
+LibSDL := -lSDL2
 
 all:
-	pwd
-	cc -std=c++14 SpaceInvaders.cpp Engine.cpp Player.cpp Weapon.cpp Utils.cpp Alien.cpp AlienPack.cpp $(LibSDL) -fno-exceptions -o SpaceInvaders -v
+	g++ -std=c++14 src/SpaceInvaders.cpp src/Engine.cpp src/Player.cpp src/Weapon.cpp src/Utils.cpp src/Alien.cpp src/AlienPack.cpp $(LibSDL) -fno-exceptions -o SpaceInvaders
 
 clean:
 	-rm SpaceInvaders
